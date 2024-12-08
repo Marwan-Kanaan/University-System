@@ -1,0 +1,127 @@
+/* General page styling */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #2c3e50;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  padding: 10px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #34495e;
+  border-radius: 5px;
+  transform: scale(1.05);
+}
+
+/* Dashboard header */
+.dashboard-header {
+  text-align: center;
+  padding: 30px 0;
+}
+
+h1 {
+  font-size: 40px;
+  color: #2c3e50;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Widgets */
+.widgets {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+  padding: 0 20px;
+}
+
+.widget {
+  background-color: white;
+  width: 30%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.widget h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.widget p {
+  font-size: 18px;
+  color: #7f8c8d;
+}
+
+/* Cards for sections */
+.cards {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+  padding: 0 20px;
+}
+
+.card {
+  background-color: white;
+  width: 30%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.card a {
+  text-decoration: none;
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.card a:hover {
+  background-color: #2980b9;
+}
+
+/* Chart container */
+.chart-container {
+  width: 80%;
+  margin: 40px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 14px;
+  color: #7f8c8d;
+}
