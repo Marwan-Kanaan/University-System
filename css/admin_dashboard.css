@@ -18,6 +18,16 @@ body {
   font-size: 18px;
 }
 
+@media screen and (max-width: 768px) {
+  .container {
+      width: 90%;
+  }
+
+  .profile-card {
+      width: 100%;
+  }
+}
+
 .navbar a {
   color: white;
   text-decoration: none;

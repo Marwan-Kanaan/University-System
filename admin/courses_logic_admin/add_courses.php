@@ -61,6 +61,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             margin-bottom: 5px;
         }
 
+        @media screen and (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+
+            .profile-card {
+                width: 100%;
+            }
+        }
+
         input {
             width: 90%;
             padding: 10px;
