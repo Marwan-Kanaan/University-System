@@ -1,4 +1,12 @@
 <?php
+session_start();
+
+// Check if the admin is logged in
+if (!isset($_SESSION['admin_id'])) {
+    header('Location: admin_login.php');
+    exit;
+}
+
 include "../../includes/db.php";
 
 // Check if an ID is provided in the URL for editing

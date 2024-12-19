@@ -139,7 +139,7 @@ $profile_photo_url = $student['profile_photo']
             background-color: #3498db;
         }
 
-        /* Responsive Design */
+    
         @media screen and (max-width: 768px) {
             .container {
                 width: 90%;

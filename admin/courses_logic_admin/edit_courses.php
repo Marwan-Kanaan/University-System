@@ -1,13 +1,13 @@
 <?php
 session_start();
 if (!isset($_SESSION['admin_id'])) {
-    header('Location: admin_login.php');
+    header('Location: ../admin_login.php');
     exit;
 }
 
 include('../../includes/db.php');
 
-// Fetch course data for editing
+
 if (isset($_GET['id'])) {
     $course_id = $_GET['id'];
     $stmt = $conn->prepare("SELECT * FROM courses WHERE id = ?");
@@ -18,7 +18,6 @@ if (isset($_GET['id'])) {
     $stmt->close();
 }
 
-// Update course data
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $course_name = $_POST['course_name'];
     $course_code = $_POST['course_code'];

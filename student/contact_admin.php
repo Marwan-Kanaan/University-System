@@ -41,7 +41,7 @@ $admin_query_result = $conn->query($admin_query);
             padding: 0;
         }
 
-        /* Navbar Styles */
+
         .navbar {
             background-color: #2c3e50;
             padding: 15px 20px;
@@ -119,7 +119,7 @@ $admin_query_result = $conn->query($admin_query);
             text-decoration: underline;
         }
 
-        /* Responsive Design */
+
         @media screen and (max-width: 768px) {
             .navbar {
                 flex-direction: column;
@@ -143,7 +143,7 @@ $admin_query_result = $conn->query($admin_query);
 </head>
 
 <body>
-    <!-- Navigation Bar -->
+
     <div class="navbar">
         <div><strong>Admin Contact Page</strong></div>
         <div>
@@ -157,7 +157,7 @@ $admin_query_result = $conn->query($admin_query);
     <div class="container">
         <h2>Contact an Admin</h2>
 
-        <!-- Admin Cards -->
+
         <div class="admin-cards">
             <?php while ($admin = $admin_query_result->fetch_assoc()): ?>
                 <div class="admin-card">

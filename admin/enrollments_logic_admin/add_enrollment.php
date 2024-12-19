@@ -1,23 +1,21 @@
 <?php
-// Start session
 session_start();
 
-// Check if the admin is logged in
+
 if (!isset($_SESSION['admin_id'])) {
-    header('Location: admin_login.php');
+    header('Location: ../admin_login.php');
     exit;
 }
 
 include "../../includes/db.php";
 
-// Fetch students and courses
+
 $students_query = "SELECT id, name FROM students";
 $students_result = $conn->query($students_query);
 
 $courses_query = "SELECT id, course_name FROM courses";
 $courses_result = $conn->query($courses_query);
 
-// Handle form submission
 $message = "";
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $student_id = $_POST['student_id'];

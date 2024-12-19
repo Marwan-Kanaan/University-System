@@ -1,15 +1,14 @@
 <?php
 session_start();
 
-// Check if the admin is logged in
 if (!isset($_SESSION['admin_id'])) {
-    header('Location: admin_login.php');
+    header('Location: ../admin_login.php');
     exit;
 }
 
 include('../../includes/db.php');
 
-// Handle search functionality
+
 $search_query = "";
 if (isset($_GET['search']) && !empty($_GET['search'])) {
     $search_query = $_GET['search'];
@@ -17,7 +16,7 @@ if (isset($_GET['search']) && !empty($_GET['search'])) {
     $search_term = "%$search_query%";
     $stmt->bind_param("ss", $search_term, $search_term);
 } else {
-    // Default: Fetch all courses
+
     $stmt = $conn->prepare("SELECT * FROM courses");
 }
 

@@ -4,7 +4,7 @@ session_start();
 
 // Check if the admin is logged in
 if (!isset($_SESSION['admin_id'])) {
-    header('Location: admin_login.php');
+    header('Location: ../admin_login.php');
     exit;
 }
 
@@ -209,10 +209,20 @@ if (isset($_GET['delete'])) {
                         <td><?= $row['enrollment_date'] ?></td>
                         <td class="action-btns">
                             <a href="edit_enrollment.php?id=<?= $row['id'] ?>">Edit</a>
-                            <a href="?delete=<?= $row['id'] ?>" onclick="return confirm('Are you sure you want to delete this enrollment?')">Delete</a>
+                            <a href="javascript:void(0);" onclick="confirmDelete(<?= $row['id']; ?>)">Delete</a>
                         </td>
                     </tr>
                 <?php endwhile; ?>
+
+                <script>
+                    function confirmDelete(enrollmentId) {
+                        if (confirm("Are you sure you want to delete this enrollment?")) {
+                            window.location.href = "delete_enrollment.php?id=" + enrollmentId;
+                        }
+                    }
+                </script>
+
+
             </tbody>
         </table>
     </div>
