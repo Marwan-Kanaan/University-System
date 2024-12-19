@@ -121,6 +121,7 @@ A PHP-based web application designed to simplify student and administrative inte
 1. Import the `university_management` database schema into your MySQL server.
 2. Configure the database connection in the `db.php` file located in the `includes/` folder.
 3. Follow the folder structure and file hierarchy as per the code implementation.
+4. All the Users password is : 123456.
 
 ---
 
@@ -131,6 +132,10 @@ A PHP-based web application designed to simplify student and administrative inte
 - MySQL database
 - A web server (e.g., Apache, Nginx)
 - A modern web browser
+
+---
+
+## The source code is available for download and use. University course ( WEB 2 ).
 
 ---
 
